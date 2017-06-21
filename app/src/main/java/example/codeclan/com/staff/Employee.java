@@ -26,7 +26,9 @@ public class Employee {
     }
 
     public void setName(String name) {
+        if(name != null || name != ""){
         this.name = name;
+        }
     }
 
     public double getSalary() {
@@ -37,7 +39,11 @@ public class Employee {
         return ssn;
     }
 
-    public double raiseSalary(double amount) { return salary += amount;}
+    public void raiseSalary(double amount) {
+        if (amount >= 0) {
+            salary += amount;
+        }
+    }
 
 
 }
