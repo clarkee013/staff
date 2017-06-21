@@ -37,7 +37,8 @@ public class Employee {
         return ssn;
     }
 
-    public double raiseSalary() { return ***SOMETHING***}
+    public double raiseSalary(double amount) { return salary += amount;}
+
 
 }
 

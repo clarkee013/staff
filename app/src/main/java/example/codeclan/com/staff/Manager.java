@@ -5,10 +5,10 @@ package example.codeclan.com.staff;
  */
 
 public class Manager extends Employee {
+    public String deptName;
 
-    private String deptName;
-
-    public Manager(String deptName) {
+    public Manager(int EmpId, String name, String ssn, int salary, String deptName) {
+        super(empId, name, ssn, salary)
         this.deptName = deptName;
     }
 
